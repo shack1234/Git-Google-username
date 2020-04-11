@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <ng-progress></ng-progress>
+   <app-user-form (searchOutput)= "get($event)"></app-user-form>
+   <div class="overlay">
+    <div class="container content">
+      <div class="row">
+        <div class="col-sm-3" >
+            <div  id="img" id="card"class="card-img-top"class="img-fluid img-thumbnail">
+              <img src="{{user.avatar_url}}" alt="" height="230px" width="210px">
+            </div> 
+            <div class="card-body">
+              <span id="gitname"><i class="fa fa-user" style="font-size:15px"></i> &nbsp; {{ user.login}}</span> <a href="{{user.html_url}}"></a>
+          </div>
+          </div>
+          <div class="col-sm-2">   
+          </div>
+        <div class="col-sm-7">
+          <div class="card" >
+            <div class="card-body">
+              <h4>Username : {{user.login}}</h4>
+              <hr>
+              <span><i class="fa fa-file-o" style="font-size:18px"></i>&nbsp;&nbsp; Repository:&nbsp;&nbsp; <span class="follow">{{user.public_repos}}</span></span>
+              <hr>
+              <span> <i class="fa fa-user" style="font-size:18px"></i>&nbsp;&nbsp; Following:&nbsp;&nbsp; <span class="follow"> {{user.following}}</span></span>
+              <hr>
+              <span> <i class="fa fa-users"style="font-size:18px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span class="follow"> {{user.followers}}</span></span>
+              <hr>
+            </div>
+          </div>  
+        </div>
+      </div> 
+    </div>
+    </div>
+  </div>
+<hr>
+<app-repository></app-repository>

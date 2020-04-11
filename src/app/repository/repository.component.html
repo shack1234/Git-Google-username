@@ -1,0 +1,36 @@
+<div class="container-fluid ">
+<app-user-form (searchOutput)= "getRepo($event)"></app-user-form>
+
+    <div class="overlay">
+    <div class="col-ms-4">
+        <div class="col-ms-4">
+            <div class="card" appHighlight *ngFor="let repos of userRepo" style="width: 22rem;" class="repo">
+                <div class="card-body" id="repo-card">
+                    <h5 class="card-title">Repo Name: &nbsp;{{repos.name}} </h5>
+                    <div class="card-text">
+                        <hr>
+                        <div class="desc"><span class="top">Description:</span> &nbsp;{{repos.description}}
+                        </div>
+                        <hr>
+                        <div class="card-subtitle mb-2">
+                            <span class="top">Language: </span> {{repos.language}}
+                        </div>
+                        <div class="card-subtitle mb-2"><span class="top">Created On:</span>
+                            &nbsp;{{repos.created_at | date}}</div>
+                    </div>
+              
+                <div class="card-footer">
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button class="btn btn-md btn-default" id="visit"><a href="{{repos.html_url}}"
+                                class="card-link">Visit &nbsp; <i class="fa fa-arrow-circle-right"
+                                    style="font-size:16px"></i></a> </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+   

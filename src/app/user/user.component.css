@@ -1,0 +1,48 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
+
+body {
+    overflow-x: hidden;
+}
+span{
+    margin-left:3% ;
+}
+#img{
+    margin-top:3%;
+    border-image-width: inherit;
+    shape-image-threshold: initial;
+}
+#gitname{
+    font-size: larger;
+    text-align: center;
+    color: white;
+    margin: 10%;
+}
+body{
+    background-color: darkslategray;
+    backface-visibility: visible;
+
+}
+.overlay{
+    background-color:darkslategray;
+    border-radius: 5px;
+    margin-top:4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 5%;
+  }
+  nav{
+      float: left;
+      margin-left: 65%;
+  }
+  .navbar-brand{
+      text-decoration: underline;
+  }
+  #card{
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 8px;
+    margin-right: 5%;
+  } 
