@@ -10,15 +10,16 @@ import { Repositories } from '../repositories';
 export class UserComponent implements OnInit {
   //  getting username from github
   user: User;
-    constructor(public userService: UserService,public repoService: UserService ) {
+  userRepo: Repositories;
+    constructor(public userService: UserService,private repoService: UserService ) {
     }
     get(username) {
       this.userService.getUser(username).then(
-        ()=>{
+        (success)=>{
           this.user = this.userService.searchUser;
         },
         (error)=>{
-          console.log("No username Found")
+          console.log(error)
         }
       );
       this.repoService.getRepositories(username).then(
@@ -27,10 +28,10 @@ export class UserComponent implements OnInit {
           console.log(this.userRepo);
         },
         (error)=>{
-          console.log("No repositories by that name");
+          console.log(error);
         }
       );
-    }
+      }
     ngOnInit() {
       this.get('shack1234');
     }
