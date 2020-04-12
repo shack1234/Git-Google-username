@@ -22,7 +22,18 @@ body{
     backface-visibility: visible;
 }
 .card{
-    background-color:cadetblue;
+    background-color:auto;
+
+}
+
+.col-sm-4{
+    float:right;
+}
+.card-body{
+
+    color: darkslategray;
+    text-decoration: darkslategray;
+    
 }
 .overlay{
     background-color:darkslategray;
@@ -52,13 +63,18 @@ body{
   }
   .navbar-brand{
       text-decoration: underline;
+      color: teal;
+  }
+  .col-sm-2{
+    border-left: 3px solid lavender;
+    height: auto;
   }
 h2{
     margin-top: 30px;
     font-family: 'UnifrakturMaguntia', cursive;
     color: blanchedalmond;
 }
-#repo{
+.repo{
   font-family: 'Lustria', serif;
   display: flex;
   flex-wrap: wrap;
@@ -66,12 +82,14 @@ h2{
 }
 #repo-card{
     background-color:lavender;
-    margin: 10px;
-    margin-top: 18px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    margin: 2%;
+    box-sizing: border-box;
+    padding-left: 15%;
+    margin-top: 10%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     transition: all .5s ease-in-out;
 }
 #repo-card:hover{
@@ -81,7 +99,7 @@ h2{
     -webkit-transform: scale(1.1);
     transform: scale(1.1); 
 }
-h5{
+h5,h1{
     text-transform: uppercase;
 }
 #h5:hover{
