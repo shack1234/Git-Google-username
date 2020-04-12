@@ -10,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
 export class UserService {
   searchUser: User;
   repositories: Repositories;
-
   constructor (private http: HttpClient) {
     this.searchUser = new User("", "", "", "", 0, 0, 0, "");
     this.repositories = new Repositories("", "", "", new Date, 0, "");

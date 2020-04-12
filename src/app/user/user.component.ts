@@ -21,10 +21,6 @@ export class UserComponent implements OnInit {
           console.log("No username Found")
         }
       );
-    }
-    userRepo: Repositories;
-
-    getRepo(username){
       this.repoService.getRepositories(username).then(
         ()=>{
           this.userRepo =this.repoService.repositories
@@ -39,4 +35,3 @@ export class UserComponent implements OnInit {
       this.get('shack1234');
     }
   }
-
