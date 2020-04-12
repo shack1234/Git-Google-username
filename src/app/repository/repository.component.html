@@ -2,7 +2,6 @@
 <app-user-form (searchOutput)= "getRepo($event)"></app-user-form>
 <section>
   <h1 class="text-center">Public Repositories</h1>
-  <div class="over">
   <div class="container" id="repo">
     <div class="row">
     <div class="card" *ngFor="let repos of userRepo" style="width: 22rem;" class="repo">

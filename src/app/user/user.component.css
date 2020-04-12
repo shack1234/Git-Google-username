@@ -73,7 +73,6 @@ h2{
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     transition: all .5s ease-in-out;
-    
 }
 #repo-card:hover{
     background-color: rgb(207, 239, 241);
