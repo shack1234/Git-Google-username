@@ -1,35 +1,71 @@
 <div class="container-fluid">
   <ng-progress></ng-progress>
-   <app-user-form (searchOutput)= "get($event)"></app-user-form>
-   <div class="overlay">
+  <app-user-form (searchOutput)="get($event)"></app-user-form>
+  <div class="overlay">
     <div class="container content">
       <div class="row">
-        <div class="col-sm-3" >
-            <div  id="img" id="card"class="card-img-top"class="img-fluid img-thumbnail">
-              <img src="{{user.avatar_url}}" alt="" height="230px" width="210px">
-            </div> 
-            <div class="card-body">
-              <span id="gitname"><i class="fa fa-user" style="font-size:15px"></i> &nbsp; {{ user.login}}</span> <a href="{{user.html_url}}"></a>
+        <div class="col-sm-3">
+          <div id="img" id="card" class="card-img-top" class="img-fluid img-thumbnail">
+            <img src="{{user.avatar_url}}" alt="" height="230px" width="210px">
           </div>
+          <div class="card-body">
+            <span id="gitname"><i class="fa fa-user" style="font-size:15px"></i> &nbsp; {{ user.login}}</span> <a
+              href="{{user.html_url}}"></a>
           </div>
-          <div class="col-sm-2">   
-          </div>
+        </div>
+        <div class="col-sm-2">
+        </div>
         <div class="col-sm-7">
-          <div class="card" >
+          <div class="card">
             <div class="card-body">
               <h4>Username : {{user.login}}</h4>
               <hr>
-              <span><i class="fa fa-file-o" style="font-size:18px"></i>&nbsp;&nbsp; Repository:&nbsp;&nbsp; <span class="follow">{{user.public_repos}}</span></span>
+              <span><i class="fa fa-file-o" style="font-size:18px"></i>&nbsp;&nbsp; Repository:&nbsp;&nbsp; <span
+                  class="follow">{{user.public_repos}}</span></span>
               <hr>
-              <span> <i class="fa fa-user" style="font-size:18px"></i>&nbsp;&nbsp; Following:&nbsp;&nbsp; <span class="follow"> {{user.following}}</span></span>
+              <span> <i class="fa fa-user" style="font-size:18px"></i>&nbsp;&nbsp; Following:&nbsp;&nbsp; <span
+                  class="follow"> {{user.following}}</span></span>
               <hr>
-              <span> <i class="fa fa-users"style="font-size:18px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span class="follow"> {{user.followers}}</span></span>
+              <span> <i class="fa fa-users" style="font-size:18px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span
+                  class="follow"> {{user.followers}}</span></span>
               <hr>
             </div>
-          </div>  
+
+            <a href="{{user.html_url}}" id="button" class="slide">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              &nbsp;
+            </a>
+          </div>
         </div>
-      </div> 
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<section>
+  <h1 class="text-center">Public Repositories</h1>
+  <div class="over">
+  <div class="container" id="repo">
+    <div class="row">
+    <div class="card" *ngFor="let repos of userRepo" style="width: 22rem;" class="repo">
+      <div class="card-body" id="repo-card">
+        <h5 class="card-title" id="h5">Name: {{repos.name}}</h5>
+        <p class="card-text">Description: {{repos.description}}</p>
+        <p class="card-text">Language: {{repos.language}}</p>
+        <p class="card-text text-muted"> <i><i> Created {{repos.created_at | date}} </i></i></p>
+      </div>
+      <div class="card-footer">
+        <div class="btn-group" role="group" aria-label="Third group">
+            <button class="btn btn-md btn-default" id="visit"><a href="{{repos.html_url}}"
+                    class="card-link">View on Github &nbsp; <i class="fa fa-arrow-circle-right"
+                        style="font-size:16px"></i></a> </button>
+        </div>
     </div>
     </div>
   </div>
-<hr>
+  </div>
+  </div>
+</section>
