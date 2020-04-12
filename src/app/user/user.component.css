@@ -21,6 +21,9 @@ body{
     background-color: darkslategray;
     backface-visibility: visible;
 }
+.card{
+    background-color:cadetblue;
+}
 .overlay{
     background-color:darkslategray;
     border-radius: 5px;
@@ -32,6 +35,17 @@ body{
     padding-left: 1%;
     padding-bottom: 5%;
   }
+  .over{
+    background-color:ghostwhite;
+    border-radius: auto;
+    margin-top:4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 4%;
+  }
   nav{
       float: left;
       margin-left: 65%;
@@ -39,9 +53,42 @@ body{
   .navbar-brand{
       text-decoration: underline;
   }
-  #card{
-    margin-top: 1%;
-    margin-bottom: 3%;
-    border-radius: 8px;
-    margin-right: 5%;
-  } 
+h2{
+    margin-top: 30px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    color: blanchedalmond;
+}
+#repo{
+  font-family: 'Lustria', serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#repo-card{
+    background-color:lavender;
+    margin: 10px;
+    margin-top: 18px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: all .5s ease-in-out;
+    
+}
+#repo-card:hover{
+    background-color: rgb(207, 239, 241);
+    color: darkslategrey;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+h5{
+    text-transform: uppercase;
+}
+#h5:hover{
+    text-decoration: underline;
+    
+}
+hr{
+    border-top: 1px dashed black;
+}
