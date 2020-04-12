@@ -5,3 +5,9 @@
 .form-inline {
     margin-left: 20%;
 }
+.navbar-brand{
+    color: lavender;
+}
+.navbar-brand:hover{
+    color: lightcyan;
+}
