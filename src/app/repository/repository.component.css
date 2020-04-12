@@ -11,29 +11,49 @@
     padding-bottom: 5%;
   }
  
-  #card-body{
-    background: rgba(2,29,61,1);
-    border: 2px rgba(2,29,61,1) solid !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5) !important;
-    transition: all .6s ease-in-out;  
+h2{
+  margin-top: 30px;
+  font-family: 'UnifrakturMaguntia', cursive;
+  color: blanchedalmond;
 }
+
+#repo{
+font-family: 'Lustria', serif;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
 #repo-card{
-  background-color:azure;
-  margin: 15px;
-  margin-top: 20px;
+  font-size: medium;
+  background-color:lavender;
+  margin: 10px;
+  margin-top: 18px;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   transition: all .5s ease-in-out;
   
 }
 
-.repo{
-  font-family: 'Lustria', serif;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+#repo-card:hover{
+  background-color: rgb(207, 239, 241);
+  color: darkslategrey;
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+h5{
+  text-transform: uppercase;
+}
+
+#h5:hover{
+  text-decoration: underline;
   
-  
+}
+section{
+  margin-top: 2%;
 }
