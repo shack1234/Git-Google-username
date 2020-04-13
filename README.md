@@ -1,6 +1,55 @@
+
+# Shadrak Anayo
+
+---
+
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+
+---
+
+## Description
+Angular application that allows a user to  search github users and fiind their repositories
+---
+
+## Live demo
+
+</>
+
+---
+
+
+## Setup Requirements
+* Open Terminal {Ctrl+Alt+T}
+* git clone
+* cd Git-Google-search
+* code . or atom . depending on the text editor of your choise.
+* Navigate to the folder.
+* Open via text editor.
+
+---
+
+
+## BD
+
+---
+
+## Known Bugs
+None
+
+---
+
+## Technologies Used
+This application was created using Angular and typescript
+
+---
+
+## Support and contact details
+If you run into any issues or have questions, ideas or concerns contact <shadrackanayo@gmail.com>
+
+
+---
 
 ## Development server
 
@@ -25,3 +74,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
