@@ -15,7 +15,7 @@ Angular application that allows a user to  search github users and fiind their r
 
 ## Live demo
 
-</>
+</https://shack1234.github.io/Git-Google-username/>
 
 ---
 
@@ -23,15 +23,10 @@ Angular application that allows a user to  search github users and fiind their r
 ## Setup Requirements
 * Open Terminal {Ctrl+Alt+T}
 * git clone
-* cd Git-Google-search
+* cd Git-Google-username
 * code . or atom . depending on the text editor of your choise.
 * Navigate to the folder.
 * Open via text editor.
-
----
-
-
-## BD
 
 ---
 
@@ -47,7 +42,6 @@ This application was created using Angular and typescript
 
 ## Support and contact details
 If you run into any issues or have questions, ideas or concerns contact <shadrackanayo@gmail.com>
-
 
 ---
 
